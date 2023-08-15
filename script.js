@@ -100,7 +100,7 @@ function validateEmail(event) {
 		label.classList.add('valid');
 		errorMessage.hidden = true;
 
-		if (!email.value.match(/(?<=@).+\..+/)) {
+		if (!email.value.match(/.+@.+\..+/)) {
 
 			email.classList.remove('valid');
 			email.classList.add('invalid');
