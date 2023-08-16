@@ -27,18 +27,18 @@ h1 {
 
 .form-container {
 	width: 500px;
-	margin: 20px auto;
+	margin: 10px auto 0px;
 	padding: 20px;
 	border: 1px solid var(--accent-background-color);
 	border-radius: 8px;
+	box-sizing: border-box;
 	background-color: var(--background-color);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 510px) {
 
 	.form-container {
 		width: 100%;
-		margin: 10px auto 0px;
 		padding: 15px;
 		border: none;
 		border-radius: 0;
@@ -98,14 +98,14 @@ label:first-child {
 	margin-top: 0;
 }
 
-label.invalid {
-	font-weight: bold;
-	color: var(--error-color);
-}
-
 label.valid {
 	font-weight: bold;
 	color: var(--success-color);
+}
+
+label.invalid {
+	font-weight: bold;
+	color: var(--error-color);
 }
 
 .submit-button {
@@ -133,7 +133,6 @@ label.valid {
 }
 
 .submit-button:disabled:hover {
-	cursor: default;
 	background-color: var(--accent-background-color);
 }
 

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./styles.css">
 	<link rel="icon" href="./favicon.ico">
+	<script src="./script.js" type="module"></script>
 	<title>Форма регистрации пользователя</title>
 </head>
 
@@ -14,13 +15,13 @@
 	<div class="form-container">
 		<form id="registration-form">
 			<label for="first-name" id="first-name-label">Имя*</label>
-			<input type="text" id="first-name" placeholder="Василий" required>
+			<input type="text" id="first-name" placeholder="Василий" spellcheck="false" required>
 			<p class="error-message" id="first-name-error" hidden>Ошибка</p>
 			<label for="last-name" id="last-name-label">Фамилия*</label>
-			<input type="text" id="last-name" placeholder="Иванов" required>
+			<input type="text" id="last-name" placeholder="Иванов" spellcheck="false" required>
 			<p class="error-message" id="last-name-error" hidden>Ошибка</p>
 			<label for="email" id="email-label">Email*</label>
-			<input type="email" id="email" placeholder="mailbox@example.com" required>
+			<input type="email" id="email" placeholder="mailbox@example.com" spellcheck="false" required>
 			<p class="error-message" id="email-error" hidden>Ошибка</p>
 			<label for="birth-day" id="birth-day-label">Дата рождения*</label>
 			<input type="date" id="birth-day" required>
@@ -36,7 +37,6 @@
 			<input class="submit-button" type="submit" name="submit" id="form-button" value="Отправить" disabled>
 		</form>
 	</div>
-	<script src="./script.js"></script>
 </body>
 
 </html>
