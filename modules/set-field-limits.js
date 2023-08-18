@@ -11,7 +11,7 @@ export default function setFieldLimits(form) {
 
 	password.minLength = '8';
 	password.maxLength = '100';
-	password.pattern = '^[A-Za-zА-Яа-яЁё0-9\\s`!@#№$%^&*\\(\\)_=+\\[\\]\\{\\}:;"\\\|,.\\/<>?~\'\\-]+$';
+	password.pattern = '^[A-Za-zА-Яа-яЁё0-9\\s`!@#№$%^&*\\(\\)_=+\\[\\]\\{\\}\\\\:;"\\|,.\\/<>?~\'\\-]+$';
 
 	const currentDate = new Date();
 	let year = currentDate.getFullYear() - 18;
